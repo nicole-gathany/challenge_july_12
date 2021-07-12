@@ -3,8 +3,6 @@
 //For example, repeats([4,5,7,5,4,8]) = 15 because only the numbers 7 and 8 occur once, and their sum is 15. Every other number occurs twice.
 
 const repeats = arr => {
-
-  console.log(arr.filter(el => arr.indexOf(el)===arr.lastIndexOf(el)))
  return arr.filter(el => arr.indexOf(el)===arr.lastIndexOf(el)).reduce((acc, curr)=> acc + curr, 0)
 
 }
